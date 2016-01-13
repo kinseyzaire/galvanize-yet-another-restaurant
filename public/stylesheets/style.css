@@ -19,7 +19,7 @@ header {
 
 main {
    padding: 50px;
-   width: 80%;
+   /*width: 80%;*/
    margin: 0 auto;
    overflow: auto;
 }
@@ -46,7 +46,7 @@ h3 {
    height: 300px;
    float: left;
    padding: 15px;
-   margin: 25px;
+   margin: 15px;
    background-image: url("../images/mexican.png");
 }
 

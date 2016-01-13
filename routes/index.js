@@ -7,7 +7,9 @@ function Restaurants() {
 }
 
 router.get('/', function(req, res, next) {
-   res.render('restaurants/index', { title: 'gTable Restaurants' });
+   Restaurants().select().then(function(results){
+      res.render('restaurants/index', {restaurants: results});
+   });
 });
 
 router.get('/restaurants', function(req, res, next) {
