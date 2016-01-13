@@ -39,6 +39,12 @@ h3 {
    margin-top: 0;
 }
 
+a {
+   text-decoration: none;
+   color: grey;
+   font-size: 20px;
+}
+
 .restaurantSquare {
    background-color: #eee;
    border: 2px solid black;
@@ -51,7 +57,7 @@ h3 {
 }
 
 .theDeets {
-   margin-top: 200px;
+   margin-top: 185px;
 }
 
 .theScore {
