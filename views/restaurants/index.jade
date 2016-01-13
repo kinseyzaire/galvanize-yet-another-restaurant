@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  a(href="/restaurants/new") Add a New Restaurant
+  main
+    if restaurants
+      for restaurant in restaurants
+        div.restaurantSquare
+          a(href="/restaurants/" + restaurant.id) #{restaurant.name}
+          div.theDeets
+            //- h3= restaurant.cuisine
+            h3= restaurant.city
+          div.theScore
+            h3= restaurant.rating
+            img(src="../images/star.png", alt="rating star") 
+            
+            

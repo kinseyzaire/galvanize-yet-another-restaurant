@@ -1,0 +1,13 @@
+extends ../layout 
+
+block content 
+  if restaurant
+    div.main
+      h1= restaurant.name 
+      h3= restaurant.cuisine
+      p Rating: #{restaurant.rating}
+      p= restaurant.description 
+      p 
+        a(href='/restaurants/'+ restaurant.id + '/edit') Edit
+        form(action='/restaurants/#{restaurant.id}/delete' method='post')
+          input(type='submit' value='Delete')
