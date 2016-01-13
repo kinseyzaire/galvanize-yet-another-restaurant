@@ -1,0 +1,12 @@
+extends ../layout 
+
+block content 
+
+  div.container
+    h1 Admin
+    main
+      if restaurants
+        for restaurant in restaurants
+          h2 #{restaurant.name}
+   
+    
